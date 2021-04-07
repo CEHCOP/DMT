@@ -1,13 +1,9 @@
 body {
     margin: 0;
     font-family: 'Campton', 'serif';
-    
-    
-
     font-size: 23px;
     line-height: 1.6;
     color: #333333;
-
     background-color: #3e3b4a;
 }
 
@@ -25,36 +21,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Container */
 .container__one {
-    display: flex;
-    
+    display: flex;    
     position: relative;
-
     padding-bottom: 20px;
-
     width: 100%;
     max-width: 1021px;
     margin: 0 auto;
-
 }
-
 
 /* Intro */
 
 .intro {    
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-top: 71px;
     margin-bottom: 45px;    
 }
 
 .intro__title {
     font-size: 48px;
-    font-weight: bold;
-    
+    font-weight: bold;    
     color:white;
 }
 
@@ -67,54 +55,62 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__subtitle {    
     font-size: 13px;
-
     color: #797681;
 }
 
-.burger__menu {   
+.burger__menu { 
+    position: absolute;  
     text-decoration: none;
-
+    padding-left: 30px;
+    top: -8px;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.2em;
-
     color: #797681;
 }
 
+.burger__footer { 
+    position: absolute;  
+    text-decoration: none;
+    padding-top: 15px;
+    padding-left: 30px;
+    top: -8px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #797681;
+}
 .search {
+    position: relative;
     text-decoration: none;
-
+    padding-right: 40px;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.2em;
-
     color: #797681;
 }
 
 .icon__search {
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    right: 0;
     background-image: url(./images/search.png);
-    height: 23px;
-    width: 30px;
+    background-repeat: no-repeat ;
+    height: 46px;
+    width: 40px;
 }
-
-
 
 /* Burger */
 
-
-.burger__item {
-    /* display: block; */
+.burger__item {    
     width: 25px;
     height: 3px;
-
     background-color: #898691;
-
     font-size: 0;
     color: transparent;
-
     position: relative;
-    margin-right: 7px;
-    
+    margin-right: 7px;    
 }
 
 .burger__item:before,
@@ -123,38 +119,28 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     position: absolute;
-
     background-color: #898691;
-
     left: 0;
     z-index: 1;
 }
 
 .burger__item:before {
     top: -8px;
-
 }
 
 .burger__item:after {
     bottom: -8px;
 }
 
-
-
-
-
 /* Main */
 
 .main__suptitle { 
     font-size: 14px;
     font-weight: bold;
-
     color: #fac5b1;
-
     padding-top: 30px;
     padding-bottom: 15px;
     padding-left: 30px;
-
     letter-spacing: 0.3em;
 }
 
@@ -162,141 +148,61 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 72px;
     font-weight: bold;
     line-height: 1.0em;
-
     color: white;
-
     padding-left: 30px;
-
 }
 
 .main__subtitle {
     font-size: 36px;
     font-weight:300;
-
     color: white;
-
     padding-left: 30px;
     padding-bottom: 70px;
-
     line-height: 1.2em;  
 }
 
 /* Buttons */
 
-.btn__main {
-    
+.btn__main {    
     position: absolute; 
-    bottom: 20px;   
-    
-}
-
-.btn {    
-    display:inline-block;
-    vertical-align: top;
-    padding: 8px 30px;
-
-    border: 4px solid #ffe18f;
-
-    max-width: 100%;
-
-    font-size: 20px;
-    font-weight:bold;
-    color: #fff;
-    
-    text-decoration: none;
-
-    transition: background 0.1s 
-    linear, color 0.1s  linear;
-
-    margin-left: 30px;
-    margin-bottom: 40px;
-    
-}
-
-.button {
+    bottom: 20px;
     padding-top: 120px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-.btn__second {   
+.btn__readmore {   
     display:inline-block;
     vertical-align: top;
     padding: 3px 20px;
-
     border: 4px solid #ffe18f;
-
     max-width: 100%;
-
     font-size: 20px;
     font-weight:bold;
-    color: #fff;
-    
+    color: #fff;    
     text-decoration: none;
-
-    transition: background 0.1s 
-    linear, color 0.1s  linear;
-
+    transition: background-color 0.1s linear, color 0.1s  linear;
     margin-left: 30px;
+    
     }
-
     
-.review__button {  
-
+.button__review { 
     margin-top: 85px;
-    margin-bottom: 30px;
     margin-left: 50px;
     font-size: 20px;
     color:#3d3c4a;
     padding: 6px 15px;
-
-    max-width: 100%;
-
-                    
+    max-width: 100%;                    
     display: inline-block;
     vertical-align: top;
-    font-weight: 600;
-    
+    font-weight: 600;    
     text-decoration: none;
-    text-align: center;
-   
-}
-    
-.button--yellow {
-    background-color: #ffe18e;
-}
+    text-align: center;   
 
-.button--yellow {  
-    height:45px;  
+    background-color: #ffe18e;
+    height: 45px;  
     width: 120px;
 }
-
-.review__button__second {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    font-size: 20px;
-    color:#3d3c4a;
-    padding: 6px 15px;
-
-    max-width: 100%;
-
-                    
-    display: inline-block;
-    vertical-align: top;
-    font-weight: 600;
     
-    text-decoration: none;
-    text-align: center;    
-}
-
-.button--blue {
-    background-color: #ffe18e;
-}
-
-.button--blue {  
-    height:45px;  
-    width: 120px;
-}
 
 .accessories__button {
     margin-top: 25px;
@@ -304,26 +210,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     color: white;
     padding: 6px 35px;
-
-    max-width: 100%;
-                    
+    max-width: 100%;                    
     display: inline-block;
     vertical-align: top;
-    font-weight: 600;
-    
+    font-weight: 600;    
     text-decoration: none;
     text-align: center;
-}
-    
-.button--red {
-    background-color: #66689c;
-}
 
-.button--red {  
-    height:45px;  
+    background-color: #66689c;
+    height: 45px;  
     width: 280px;
 }
-
+    
 /* Accessories */
 
 .accessories__form {
@@ -334,11 +232,9 @@ h1, h2, h3, h4, h5, h6 {
 .accessories__subtitle {
     font-size: 14px;
     font-weight: bold;
-
     color: #fac5b1;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-
     padding-top: 30px;
     padding-left: 30px;
 }
@@ -346,64 +242,45 @@ h1, h2, h3, h4, h5, h6 {
 .accessories__title {
     font-size: 48px;
     font-weight: bold;
-
     color: white;
-
-    padding-left: 30px;
-    
+    padding-left: 30px;    
 }
 
 .accessories__text {     
     font-size: 24px;
     font-weight: 300;
-
     color: white;
-
     padding-left: 30px;
 }
 
 .accessories__subtitle__right {
     font-size: 48px;
     font-weight: bold;
-
     font-family: 'Kaushan', sans-serif;
-
     color: white;
-
-    padding-top: 40px;
-    
+    padding-top: 40px;    
     line-height: 0.9em;
 }
 
 .accessories__title__right {
     font-size: 24px;
     font-weight: 300;
-
     color: white;
-
     padding-top: 10px;
-
 }
 
 .accessories__suptitle__right {
     padding-bottom: 80px;
 }
 
-
-
-.input {
-    
+.input {    
     font-size: 21px;
-    height: 30px;
-    
+    height: 30px;    
     color: white;
     font-weight: bold;
     border:thin;
-
     text-align: center;
-    resize: none;
-    
-    
+    resize: none;    
     background-color: #eb7b61;
 }
 
@@ -418,19 +295,13 @@ input:focus {
 .inner__border {
     display: -webkit-inline-box;
     text-align: center;
-
     margin-top: 20px;
-    
-
-    border: 3px solid #fff;
-       
+    border: 3px solid #fff;       
 }
-
 
 .accessories__suptitle__right {
     font-size: 15px;
     font-weight: 300;
-
     color: white;
 }
 
@@ -441,36 +312,27 @@ input:focus {
     display: flex;           
 }        
 
-.review__text {
-    
+.review__text {    
     font-size: 36px;
     font-weight: bold;
-
     color: white;
-
     padding-top: 130px;   
 }
-
 
 .review__title {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-
     color: #ffe18f;
-
     padding-top: 30px;
 }
-
-
 
 .review__right__bg {
     background-image: url(./images/review/Vector\ Smart\ Object3.jpg);
     background-repeat: no-repeat;   
     background-size:cover;
-}
-        
+}        
 
 .social {
     display: flex;
@@ -480,7 +342,6 @@ input:focus {
     position: absolute;
     right: 0;
     top: 0;
-
 }
 
 .social__item {
@@ -490,50 +351,40 @@ input:focus {
     height: 40px;
     width: 40px;
     margin-right: 4px;
-
-    transition: background 0.1s linear;
+    transition: background-color 0.1s linear;
 }
 
 .social__item:hover {
-    background-color: #e8ecee;
+    background-color: #898690;
 }
 
-
 .social__item:hover .social__icon {
-
     fill: #000;
 }
 
 .social__icon {
-    fill: #c6cacc;
+    fill: #567788;
     display: block;
     height: 25px;
-
 }
 
 .social--footer .social__icon {
     fill: #898690;
 }
 
-
-
 .review__bg {
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     padding-bottom: 100px;
-
     height: 100%;
 } 
 
     .container__25 {
-        flex-basis: 25%; 
-        
+        flex-basis: 25%;        
     }
     .container__50 {
-        flex-basis: 50%;
-        
+        flex-basis: 50%;        
     }
 
     .container__40 {
@@ -541,8 +392,7 @@ input:focus {
     }
 
     .container__60 {
-        flex-basis: 60%;
-        
+        flex-basis: 60%;        
     }
 
     .container__100 {
@@ -552,14 +402,15 @@ input:focus {
     ._pr10 {
         padding-right: 10px;
     }
+
     ._pl10 {
         padding-left: 10px;
     }
+
     ._tal {
         text-align: left;
     }
         
-
     /* Media */
 
         @media (max-width: 809px) {
@@ -589,10 +440,11 @@ input:focus {
 
             .btn__main {
                 position: unset;
+                padding-bottom: 30px;
             }
 
             .review__button{
-            margin-left: 10px;
+                margin-left: 10px;
             }    
 
             .review__button__second {
@@ -603,5 +455,26 @@ input:focus {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .icon__search {
+                bottom: 55px;
+            }
+
+            .burger__menu {
+                padding-left: 20px;
+            }
+
+            .burger__item {
+                padding-left: 10px;
+            }
+
+            .intro {
+                margin-top: 49px;
+                margin-bottom: 30px;
+            }
+
+            .review__bg {
+                padding-bottom: 0;
             }
         }
